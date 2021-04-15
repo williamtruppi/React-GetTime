@@ -6,6 +6,7 @@ function App() {
   function getTime() {
     setTime((time = new Date().toLocaleTimeString()));
   }
+  setInterval(getTime, 1000);
 
   console.log(time);
   return (
